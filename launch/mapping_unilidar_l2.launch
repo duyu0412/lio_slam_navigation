@@ -3,8 +3,8 @@
 
 	<arg name="rviz" default="true" />
 	<param name="/use_sim_time" value="true" />
-	<node pkg="point_lio_unilidar" type="pointlio_mapping" name="laserMapping" output="screen">
-		<rosparam command="load" file="$(find point_lio_unilidar)/config/unilidar_l2.yaml" />
+	<node pkg="lio_slam_navigation" type="pointlio_mapping" name="laserMapping" output="screen">
+		<rosparam command="load" file="$(find lio_slam_navigation)/config/unilidar_l2.yaml" />
 		
 		<!--change to 1 to use IMU as input of Point-LIO-->
 		<param name="use_imu_as_input" type="bool" value="0"/>
@@ -21,7 +21,7 @@
 		<param name="runtime_pos_log_enable" type="bool" value="0" /> <!--1-->
 	</node>
 
-	<!-- <node pkg="point_lio_unilidar" type="octomap_builder_sync" name="octomap_builder" output="screen">
+	<!-- <node pkg="lio_slam_navigation" type="octomap_builder_sync" name="octomap_builder" output="screen">
 		<param name="resolution" value="0.2" /> 
 		<param name="max_range" value="10" />
 		<param name="prune_every" value="50" />
@@ -36,6 +36,6 @@
 	</node> -->
 
 	<group if="$(arg rviz)">
-		<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find point_lio_unilidar)/rviz_cfg/loam_livox.rviz" />
+		<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find lio_slam_navigation)/rviz_cfg/loam_livox.rviz" />
 	</group>
 </launch>

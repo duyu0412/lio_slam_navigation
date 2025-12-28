@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(point_lio_unilidar)
+project(lio_slam_navigation)
 
 SET(CMAKE_BUILD_TYPE "Debug")
 

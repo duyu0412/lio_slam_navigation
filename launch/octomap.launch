@@ -1,7 +1,7 @@
 <launch>
-  <node pkg="point_lio_unilidar" type="bt_to_projected_map" name="bt_to_projected_map" output="screen">
+  <node pkg="lio_slam_navigation" type="bt_to_projected_map" name="bt_to_projected_map" output="screen">
     <!-- ✅ 必须在 node 内部 -->
-    <param name="bt_file" value="/home/user/SLAM/src/point_lio_unilidar/Octomap/pointlio_octomap0.bt" />
+    <param name="bt_file" value="/home/user/SLAM/src/lio_slam_navigation/Octomap/pointlio_octomap0.bt" />
     
     <param name="resolution" value="0.2" />
     <param name="min_z" value="0" />
