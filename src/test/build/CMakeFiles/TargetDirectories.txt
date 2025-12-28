@@ -1,0 +1,3 @@
+/home/user/SLAM/src/point_lio_unilidar/src/test/build/CMakeFiles/loop_closure_test.dir
+/home/user/SLAM/src/point_lio_unilidar/src/test/build/CMakeFiles/edit_cache.dir
+/home/user/SLAM/src/point_lio_unilidar/src/test/build/CMakeFiles/rebuild_cache.dir
